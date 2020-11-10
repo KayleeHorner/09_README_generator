@@ -30,6 +30,17 @@ const questions = [
             name: 'license',
           }, 
           {
+            type: 'list',
+            message: 'Which license applies to this project?',
+            name: 'contributing',
+          },
+          {
+            type: 'input',
+            message: 'How would you test this project?',
+            name: 'tests',
+            default: 'N/A',
+          },
+          {
             type: 'input',
             message: 'What is your GitHub username?',
             name: 'github',
