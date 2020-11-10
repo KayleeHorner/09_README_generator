@@ -7,8 +7,8 @@
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [License](#License)
-* [section name](#sectionname)
-* [section name](#sectionname)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
 * [Questions](#Questions)
 
 
