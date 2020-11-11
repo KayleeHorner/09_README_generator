@@ -60,17 +60,14 @@ fs.writeFile(fileName , data , err => err ? console.error(err) : console.log("Su
     
 }
 
-writeToFile();
-
 // function to initialize program
 function init() {
 inquirer
-    .prompt (questions);
-
+    .prompt(questions)
 }
 
 // function call to initialize program
 init();
-// writeToFile();
+
 
 
