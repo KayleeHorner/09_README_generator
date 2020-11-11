@@ -2,7 +2,7 @@ function generateTemplate(data) {
     return `
     # ${data.title}
 
-   $ ${data.description}
+    $ ${data.description}
 
     ## Table of Contents
     * [Installation](#Installation)
@@ -14,21 +14,21 @@ function generateTemplate(data) {
 
 
     ## Installation
-
+    ${data.installation}
 
     ## Usage
+    ${data.usage}
 
 
     ## License
-    This project is licensed under the  license.
-
+    This project is licensed under the ${data.license} license.
 
     ## Contributing
-
+    ${data.contribution}
 
     ## Tests
-
+    ${data.test}
 
     ## Questions
-    If you have any questions, you can find me on Github under  or at http://github.com/. Still have questions? You can email me at: 
+    If you have any questions, you can find me on Github under at http://github.com/${data.github}. Still have questions? You can email me at: ${data.email}
 `}
