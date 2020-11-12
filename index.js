@@ -27,7 +27,7 @@ const questions = [
     {
         type: 'list',
         message: 'Which license applies to this project?',
-        choices: ['GNU', 'GPLv3', 'MIT', 'Unlicensed'],
+        choices: ['GNU', 'GPLv3', 'MIT', 'Boost', 'Apache', 'Mozilla', 'Unlicensed'],
         name: 'license',
     }, 
     {
@@ -65,9 +65,9 @@ fs.writeFile(fileName , data , err => err ? console.error(err) : console.log("Su
 function init() {
 inquirer
     .prompt(questions)
-    .then((answers) => {
+    .then((answers) => 
     writeToFile("./README_files/README.md", generateMarkdown(answers))
-     });
+     );
 }
 
 // function call to initialize program
